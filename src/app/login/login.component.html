@@ -1,0 +1,17 @@
+<div class="row mt-3">
+    <div class="col">
+    <p>Login</p>
+    <div class="mb-3">
+        <label for="Nome" class="form-label">Usuario:</label>
+        <input [(ngModel)]="nome" type="text" class="form-control" id="nomeUsuario">
+    </div>
+    <div class="mb-3">
+        <label for="Senha" class="form-label">Senha:</label>
+        <input [(ngModel)]="numero" type="password" class="form-control" id="senha">
+    </div>
+    <div class="d-grid gap-2">
+        <button class="btn btn-primary" type="button" (click)="verificaUsuarioSenha()">Entrar</button>
+    </div>
+    <p>{{stringResposta}}</p>
+    </div>
+</div>
